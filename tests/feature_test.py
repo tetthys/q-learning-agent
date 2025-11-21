@@ -1,16 +1,17 @@
-from src.contracts import Action, Agent, QTable, Reward, ActionPolicy, State
+from src.contracts import Action, Agent, QTable, Reward, ActionPolicy, State, Environment
 
 def test_agent_can_learn():
     q_table = QTable()
 
-    # stub data
-    data = [
-        (("state1", "action1"), 0.5),
-        (("state1", "action2"), 0.2),
-        (("state2", "action1"), 0.8),
-    ]
+    environment_data = []
 
-    agent = Agent(q_table, data)
+    environment = Environment(environment_data)
+
+    action_policy = ActionPolicy()
+
+    agent = Agent(environment, q_table, action_policy)
+
+    agent.learn(10)
 
     assert agent is not None
 
