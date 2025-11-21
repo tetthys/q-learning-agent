@@ -1,5 +1,7 @@
 services:
   test-runner:
+    environment:
+      - PYTHONPATH=/app
     build:
       context: .
       dockerfile: Dockerfile
