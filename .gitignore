@@ -1,0 +1,90 @@
+# ----------------------------------------------------
+# Python cache & artifacts
+# ----------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.db
+
+# C extensions
+*.so
+
+# Byte-compiled
+*.py[cod]
+*$py.class
+
+# ----------------------------------------------------
+# Python environments
+# ----------------------------------------------------
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ----------------------------------------------------
+# Test & coverage
+# ----------------------------------------------------
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ----------------------------------------------------
+# Build outputs
+# ----------------------------------------------------
+build/
+dist/
+sdist/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+
+# ----------------------------------------------------
+# Editor settings
+# ----------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------------------------------
+# OS specific
+# ----------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------------------
+# Docker
+# ----------------------------------------------------
+# Docker build cache / layers
+*.pid
+docker-compose.override.yml
+docker-data/
+docker-cache/
+.tmp/
+
+# If you mount any local persistent docker volumes
+volumes/
+
+# ----------------------------------------------------
+# Project specific
+# ----------------------------------------------------
+# Logs
+logs/
+*.log
+
+# Temporary scratch files
+tmp/
+temp/
+
+# Generated test artifacts
+test_output/
